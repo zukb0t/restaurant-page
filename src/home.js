@@ -6,10 +6,6 @@ function home(){
     const header = document.querySelector("header");
     const days = ['Sunday:', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
-    const page_header = document.createElement("div");
-    page_header.classList.add("title");
-    page_header.textContent = "Homepage";
-    header.appendChild(page_header);
 
     const page_content = document.createElement("div");
     page_content.classList.add("middle");
@@ -39,7 +35,6 @@ function home(){
     page_content.appendChild(business);
 
     content.appendChild(page_content);
-    content.appendChild(footer)
     return content;
 
 }

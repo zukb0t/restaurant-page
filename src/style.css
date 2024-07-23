@@ -13,8 +13,8 @@ body{
 header{
     padding:1.5rem;
     display:flex;
-    flex-direction:row-reverse;
-    justify-content:space-between;
+
+    justify-content:center;
 }
 
 nav{
@@ -23,8 +23,9 @@ nav{
 }
 
 .title{
-    font-size:1.5rem;
+    font-size:3rem;
     font-family:'myfont';
+    text-align:center;
 }
 
 .middle{
@@ -64,4 +65,12 @@ nav{
     display:flex;
     flex-direction:column;
     gap:8px;
+}
+
+.dishes{
+    font-family:"myfont";
+    padding:1.5rem;
+    margin-top:1.5rem;
+    display:flex;
+    justify-content:space-evenly;
 }
