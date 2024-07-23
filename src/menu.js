@@ -38,11 +38,7 @@ function menu(){
     })
     priceSize.appendChild(prices);
     menu.appendChild(priceSize);
-
-
-
-
-
+    
     content.appendChild(header);
     content.appendChild(menu);
     return content;

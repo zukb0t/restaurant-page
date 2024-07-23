@@ -1,6 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const pages = ['index','home','about'];
+const pages = ['index','home','menu','about'];
 
 
 function makeFiles(config, page){
