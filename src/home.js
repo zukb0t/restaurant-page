@@ -4,6 +4,7 @@ import Pho from './pho.jpg';
 function home(){
     const content = document.querySelector("#content");
     const header = document.querySelector("header");
+    const days = ['Sunday:', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
     const page_header = document.createElement("div");
     page_header.classList.add("title");
@@ -22,15 +23,20 @@ function home(){
     pho_one.src = Pho;
     page_content.appendChild(pho_one);
 
-    
-    
+    const business = document.createElement('div');
+    business.textContent = "Business hours";
+    const businessHours = document.createElement('ul');
+    businessHours.classList.add('list');
+    business.classList.add('days');
 
-
-
-
-
-
-
+    function appendDays(day){
+        let li = document.createElement('li');
+        li.textContent = day + " 8am-5pm";
+        businessHours.appendChild(li);
+    }
+    days.forEach(appendDays);
+    business.appendChild(businessHours);
+    page_content.appendChild(business);
 
     content.appendChild(page_content);
     content.appendChild(footer)
